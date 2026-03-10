@@ -2,12 +2,11 @@ import java.util.Scanner;
 import java.util.HashSet;
 
 public class ContainsDuplicate {
+public static boolean containsDuplicate(int[] nums) {
 
-    public static boolean containsDuplicate(int[] nums) {
+HashSet<Integer> set = new HashSet<>();
 
-        HashSet<Integer> set = new HashSet<>();
-
-        for (int num : nums) {
+    for (int num : nums) {
 
             if (set.contains(num)) {
                 return true;
